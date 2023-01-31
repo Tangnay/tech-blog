@@ -1,0 +1,18 @@
+<div class="list-group">
+  {{#each posts}}
+    <a
+      class="list-group-item list-group-item-action"
+      href="/dashboard/edit/{{id}}"
+      style="width: 1000px; display: block;"
+    >
+      <div
+        class="alert alert-dark d-flex justify-content-lg-between"
+        role="alert"
+      >
+        <span>{{title}}</span>
+        <span>{{format_date createdAt}}</span>
+      </div>
+    </a>
+
+  {{/each}}
+</div>

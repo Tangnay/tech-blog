@@ -1,0 +1,42 @@
+<div class="card" style="width: 1000px;">
+  <div class="card-header bg-dark text-white">
+    <h2>Sign Up</h2>
+  </div>
+  <div class="card-body">
+    <div id="signup" role="tabpanel">
+      <form id="signup-form">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input
+            type="text"
+            id="username-input-signup"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon2">$</span>
+          <input
+            type="password"
+            id="password-input-signup"
+            class="form-control"
+            placeholder="Password"
+            aria-label="Password"
+            aria-describedby="basic-addon2"
+          />
+        </div>
+        <button
+          type="submit"
+          id="signup-btn"
+          class="btn btn-dark"
+        >Signup!</button>
+        <a href="/login" class="text-primary">Login instead</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="/js/signup.js"></script>

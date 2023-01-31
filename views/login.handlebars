@@ -1,0 +1,37 @@
+<div class="card" style="width: 1000px;">
+  <div class="card-header bg-dark text-white">
+    <h2>Login</h2>
+  </div>
+  <div class="card-body">
+    <form id="login-form">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input
+          type="text"
+          id="username-input-login"
+          class="form-control"
+          placeholder="Username"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2">$</span>
+        <input
+          type="password"
+          id="password-input-login"
+          class="form-control"
+          placeholder="Password"
+          aria-label="Password"
+          aria-describedby="basic-addon2"
+        />
+      </div>
+
+      <button type="submit" id="login-btn" class="btn btn-dark">Login!</button>
+      <a type="button" class="text-primary" href="/signup">Sign up instead</a>
+    </form>
+  </div>
+</div>
+
+<script src="/js/login.js"></script>

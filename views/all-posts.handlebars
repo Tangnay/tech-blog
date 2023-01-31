@@ -1,0 +1,24 @@
+<div>
+  {{#each posts}}
+    <div class="card">
+      <div class="card-header bg-dark text-white">
+        <div
+          class="card-header d-flex justify-content-lg-between"
+          style="width: 1000px;"
+        >
+          <div class="mr-auto p-2 fs-2">
+            <a href="/post/{{id}}" class="text-white">{{title}}</a>
+          </div>
+          <div class="p-2">
+            Posted by
+            {{User.username}}
+            on
+            {{format_date createdAt}}</div>
+        </div>
+      </div>
+      <div class="card-body">
+        {{body}}
+      </div>
+    </div>
+  {{/each}}
+</div>
